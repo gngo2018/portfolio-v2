@@ -1,4 +1,4 @@
-:root{
+:root {
   --primary: #1d6c6d;
   --secondary: #289495;
   --tertiary: #c8dada;
@@ -23,6 +23,10 @@ a {
   box-sizing: border-box;
 }
 
-h2{
-  margin:0;
+h2 {
+  margin: 0;
+}
+
+.active {
+  color: white;
 }

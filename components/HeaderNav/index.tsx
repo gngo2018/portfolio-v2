@@ -34,10 +34,10 @@ export default function HeaderNav() {
 
     return (
         <ul className={headerNavStyles.nav_list}>
-            <li onClick={(e) => handleListItemOnClick(e)}>Home</li>
-            <li onClick={(e) => handleListItemOnClick(e)}>Experience</li>
-            <li onClick={(e) => handleListItemOnClick(e)}>Projects</li>
-            <li onClick={(e) => handleListItemOnClick(e)}>Hobbies</li>
+            <li className={contentContext.homeIsOpen ? 'active' : ''} onClick={(e) => handleListItemOnClick(e)}>Home</li>
+            <li className={contentContext.experienceIsOpen ? 'active' : ''} onClick={(e) => handleListItemOnClick(e)}>Experience</li>
+            <li className={contentContext.projectsIsOpen ? 'active' : ''} onClick={(e) => handleListItemOnClick(e)}>Projects</li>
+            <li className={contentContext.hobbiesIsOpen ? 'active' : ''} onClick={(e) => handleListItemOnClick(e)}>Hobbies</li>
         </ul>
     )
 }

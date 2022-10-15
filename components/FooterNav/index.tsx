@@ -34,9 +34,9 @@ export default function FooterNav(){
 
     return (
         <footer className={footerStyles.container}>
-            <span onClick={(e) => handleSpanOnClick(e)}>Experience</span>
-            <span onClick={(e) => handleSpanOnClick(e)}>Projects</span>
-            <span onClick={(e) => handleSpanOnClick(e)}>About Me</span>
+            <span className={contentContext.experienceIsOpen ? 'active' : ''} onClick={(e) => handleSpanOnClick(e)}>Experience</span>
+            <span className={contentContext.projectsIsOpen ? 'active' : ''} onClick={(e) => handleSpanOnClick(e)}>Projects</span>
+            <span className={contentContext.hobbiesIsOpen ? 'active' : ''} onClick={(e) => handleSpanOnClick(e)}>About Me</span>
         </footer>
     )
 }
