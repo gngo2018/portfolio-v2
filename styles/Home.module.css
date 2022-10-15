@@ -1,8 +1,5 @@
 .container {
   /* Keeping this for now */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 100vh;
 }
 
@@ -15,8 +12,9 @@
   height:10vh;
 }
 
-.content {
+.content{
   height:80vh;
+  overflow: auto;
 }
 
 .content section {
@@ -25,8 +23,11 @@
 }
 
 .footer_nav {
-  display: unset;
   height: 10vh;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
 }
 
 .footer {
@@ -35,12 +36,14 @@
 
 @media (min-width: 1024px) {
   .container {
+    display: flex;
     flex-direction: row;
     justify-content: left;
   }
 
   .content {
     height: 100vh;
+    flex-grow: 1;
   }
 
   .footer {
