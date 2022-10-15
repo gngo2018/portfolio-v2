@@ -18,7 +18,7 @@ export default function HeaderNav() {
             contentContext.setHobbiesIsOpen(false);
             contentContext.setProjectsIsOpen(true)
         }
-        else if (value === 'Hobbies') {
+        else if (value === 'About Me') {
             contentContext.setHomeIsOpen(false);
             contentContext.setExperienceIsOpen(false);
             contentContext.setHobbiesIsOpen(true);
@@ -37,7 +37,7 @@ export default function HeaderNav() {
             <li className={contentContext.homeIsOpen ? 'active' : ''} onClick={(e) => handleListItemOnClick(e)}>Home</li>
             <li className={contentContext.experienceIsOpen ? 'active' : ''} onClick={(e) => handleListItemOnClick(e)}>Experience</li>
             <li className={contentContext.projectsIsOpen ? 'active' : ''} onClick={(e) => handleListItemOnClick(e)}>Projects</li>
-            <li className={contentContext.hobbiesIsOpen ? 'active' : ''} onClick={(e) => handleListItemOnClick(e)}>Hobbies</li>
+            <li className={contentContext.hobbiesIsOpen ? 'active' : ''} onClick={(e) => handleListItemOnClick(e)}>About Me</li>
         </ul>
     )
 }
