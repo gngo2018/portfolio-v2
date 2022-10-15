@@ -21,7 +21,6 @@ const Home: NextPage = () => {
         <Header />
       </div>
       <div className={styles.content}>
-        {/* Main page content goes here */}
         <Intro />
         {/* <Experience />
         <Projects />
