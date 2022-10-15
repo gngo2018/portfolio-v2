@@ -2,6 +2,7 @@
   /* Keeping this for now */
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 .header {
@@ -10,12 +11,10 @@
   left: 0;
   right: 0;
   z-index: 2;
-  height: 10vh;
 }
 
 .content {
   flex: 1 0 auto;
-  height: 80vh;
 }
 
 .content section {
