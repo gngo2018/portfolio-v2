@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Experience from '../components/Experience'
+import FooterNav from '../components/FooterNav'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Hobbies from '../components/Hobbies'
@@ -22,12 +23,12 @@ const Home: NextPage = () => {
       <div className={styles.content}>
         {/* Main page content goes here */}
         <Intro />
-        <Experience />
+        {/* <Experience />
         <Projects />
-        <Hobbies />
+        <Hobbies /> */}
       </div>
-      <div className={styles.footer}>
-        <Footer />
+      <div className={styles.footer_nav}>
+        <FooterNav />
       </div>
     </div>
   )

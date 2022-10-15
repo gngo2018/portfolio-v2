@@ -10,6 +10,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
 }
 
 .content {
@@ -21,6 +22,25 @@
   padding: 0 3%;
 }
 
-.footer {
+.footer_nav {
   margin-top: auto;
+  display: unset;
+  height:10vh;
+}
+
+.footer {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .container{
+    flex-direction: row;
+  }
+  .footer{
+    display:unset;
+  }
+
+  .footer_nav{
+    display: none;
+  }
 }
