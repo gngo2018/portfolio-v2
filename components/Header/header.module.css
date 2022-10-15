@@ -1,0 +1,16 @@
+.container{
+    height:4rem;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.menu span{
+    display: block;
+    background-color: black;
+    height:3px;
+    width:30px;
+    margin: 5px 0;
+}
