@@ -6,12 +6,11 @@ export default function Hobbies() {
         { id: 2, name: 'Golf' },
         { id: 3, name: 'Coding' },
         { id: 4, name: 'Music' },
-        { id: 5, name: 'Outoodors' },
+        { id: 5, name: 'Outdoors' },
     ]
 
     return (
         <section>
-            <h2>Hobbies!</h2>
             <div className={hobbiesStyles.grid}>
                 {hobbies.map((h) => {
                     return (
