@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className={footerStyles.container}>
             <div className={footerStyles.icon}>
-                <a href='https://github.com/gngo2018' target='_blank'>
+                <a href='https://github.com/gngo2018' target='_blank' rel="noreferrer">
                     <Image
                         src='/assets/square-github.svg'
                         alt='github'
@@ -14,7 +14,7 @@ export default function Footer() {
                 </a>
             </div>
             <div className={footerStyles.icon}>
-                <a href='https://www.linkedin.com/in/georgego/' target='_blank'>
+                <a href='https://www.linkedin.com/in/georgego/' target='_blank' rel="noreferrer">
                     <Image
                         src='/assets/linkedin.svg'
                         alt='linkedin'
@@ -23,13 +23,11 @@ export default function Footer() {
                 </a>
             </div>
             <div className={footerStyles.icon}>
-                <a>
-                    <Image
-                        src='/assets/id-card-solid.svg'
-                        alt='resume'
-                        layout='fill'
-                    />
-                </a>
+                <Image
+                    src='/assets/id-card-solid.svg'
+                    alt='resume'
+                    layout='fill'
+                />
             </div>
         </footer>
     )
