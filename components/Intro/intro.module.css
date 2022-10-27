@@ -1,9 +1,36 @@
-.container h2{
-    padding:3% 0;
+.image {
+    position: relative;
+    visibility: hidden;
 }
 
-.logo {
-    position: relative;
-    height:100px;
-    width:100px;
+@media (min-width: 1024px) {
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .description{
+        width:40%;
+    }
+
+    .description p{
+        line-height: 20px;
+    }
+
+    .image {
+        width: 50%;
+        height: 300px;
+        visibility: unset;
+    }
+}
+
+@media (min-width: 1080px) {
+    .description p{
+        line-height: 25px;
+    }
+
+    .image {
+        width: 50%;
+        height: 550px;
+    }
 }

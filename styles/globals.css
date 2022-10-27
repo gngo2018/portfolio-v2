@@ -30,3 +30,13 @@ h2 {
 .active {
   color: white;
 }
+
+img{
+  border-radius: 5px;
+}
+
+@media (min-width:1024px) {
+  h1 {
+    font-size:30px;
+  }
+}
