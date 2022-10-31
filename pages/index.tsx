@@ -40,10 +40,26 @@ const Home: NextPage = () => {
           <Header />
         </div>
         <div className={styles.content}>
-          {homeIsOpen && <Intro />}
-          {experienceIsOpen && <Experience />}
-          {projectsIsOpen && <Projects />}
-          {hobbiesIsOpen && <Hobbies />}
+          {homeIsOpen && 
+            <div className={homeIsOpen ? 'fade_in' : ''}>
+              <Intro />
+            </div>
+          }
+          {experienceIsOpen &&
+            <div className={experienceIsOpen ? 'fade_in' : ''}>
+              <Experience />
+            </div>
+          }
+          {projectsIsOpen && 
+            <div className={projectsIsOpen ? 'fade_in' : ''}>
+              <Projects />
+            </div>
+          }
+          {hobbiesIsOpen && 
+            <div className={hobbiesIsOpen ? 'fade_in' : ''}>
+              <Hobbies />
+            </div>
+          }
         </div>
         <div className={styles.footer_nav}>
           <FooterNav />
