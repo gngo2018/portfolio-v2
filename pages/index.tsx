@@ -2,14 +2,13 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Experience from '../components/Experience'
 import FooterNav from '../components/FooterNav'
-import Footer from '../components/Footer'
 import Header from '../components/Header'
-import Hobbies from '../components/Hobbies'
 import Intro from '../components/Intro'
 import Projects from '../components/Projects'
 import styles from '../styles/Home.module.css'
 import { ContentContext, ContentContextProps } from '../contexts/ContentContext'
 import { useState } from 'react'
+import About from '../components/About'
 
 const Home: NextPage = () => {
   const [homeIsOpen, setHomeIsOpen] = useState(true);
@@ -57,7 +56,7 @@ const Home: NextPage = () => {
           }
           {hobbiesIsOpen && 
             <div className={hobbiesIsOpen ? 'fade_in' : ''}>
-              <Hobbies />
+              <About />
             </div>
           }
         </div>

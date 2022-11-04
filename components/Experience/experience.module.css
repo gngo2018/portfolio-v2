@@ -1,0 +1,81 @@
+.wrapper {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    overflow: auto;
+}
+
+.experience_flex_item {
+    margin: 5px;
+}
+
+.image_container {
+    position: relative;
+    width: 90vw;
+    height: 300px;
+}
+
+.experience_title_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience_title_container span {
+    font-style: italic;
+}
+
+.experience_description,
+.link_container {
+    padding: 0 10px;
+    text-align: left;
+}
+
+.experience_description {
+    width: 90vw;
+    height: 180px;
+}
+
+.experience_description p {
+    margin-top: 0;
+}
+
+.link_container a {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.link_container a:hover {
+    color: white;
+}
+
+@media (min-width:1024px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .image_container {
+        position: relative;
+        width: 350px;
+    }
+    
+    .experience_flex_item {
+        width:40%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 5px;
+    }
+
+    .experience_description {
+        width:350px;
+        height: 170px;
+    }
+}
