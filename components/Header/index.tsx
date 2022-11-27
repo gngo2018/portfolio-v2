@@ -22,7 +22,6 @@ export default function Header() {
                         src='/assets/g3-logo.png'
                         alt='logo'
                         fill
-                        sizes="100vw"
                     />
                 </div>
                 <span>George Go</span>

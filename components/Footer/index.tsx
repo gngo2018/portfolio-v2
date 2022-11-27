@@ -10,7 +10,6 @@ export default function Footer() {
                         src='/assets/square-github.svg'
                         alt='github'
                         fill
-                        sizes="100vw"
                     />
                 </a>
             </div>
@@ -20,7 +19,6 @@ export default function Footer() {
                         src='/assets/linkedin.svg'
                         alt='linkedin'
                         fill
-                        sizes="100vw"
                     />
                 </a>
             </div>
@@ -29,7 +27,6 @@ export default function Footer() {
                     src='/assets/id-card-solid.svg'
                     alt='resume'
                     fill
-                    sizes="100vw"
                 />
             </div>
         </footer>

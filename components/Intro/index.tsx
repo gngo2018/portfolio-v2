@@ -28,7 +28,6 @@ export default function Intro() {
                         src='/assets/about.png'
                         alt='about'
                         fill
-                        sizes="100vw"
                     />
                 </div>
             </div>
