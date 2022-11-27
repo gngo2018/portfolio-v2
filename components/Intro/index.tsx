@@ -1,7 +1,8 @@
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 import introStyles from './intro.module.css'
 
 export default function Intro() {
+    const imageCss = { objectFit: 'contain'};
     return (
         <section>
             <h1>Hi! I&apos;m George Go. Welcome to my portfolio!</h1>
@@ -26,8 +27,7 @@ export default function Intro() {
                     <Image
                         src='/assets/about.png'
                         alt='about'
-                        layout='fill'
-                        objectFit='contain'
+                        fill
                     />
                 </div>
             </div>

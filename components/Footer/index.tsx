@@ -1,4 +1,4 @@
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 import footerStyles from './footer.module.css'
 
 export default function Footer() {
@@ -9,8 +9,7 @@ export default function Footer() {
                     <Image
                         src='/assets/square-github.svg'
                         alt='github'
-                        layout='fill'
-                        objectFit='contain'
+                        fill
                     />
                 </a>
             </div>
@@ -19,8 +18,7 @@ export default function Footer() {
                     <Image
                         src='/assets/linkedin.svg'
                         alt='linkedin'
-                        layout='fill'
-                        objectFit='contain'
+                        fill
                     />
                 </a>
             </div>
@@ -28,8 +26,7 @@ export default function Footer() {
                 <Image
                     src='/assets/id-card-solid.svg'
                     alt='resume'
-                    layout='fill'
-                    objectFit='contain'
+                    fill
                 />
             </div>
         </footer>
