@@ -16,7 +16,8 @@ export default function Experience() {
                                 <Image
                                     src={e.imageUrl}
                                     alt='image'
-                                    layout='fill'
+                                    fill
+                                    sizes="100vw"
                                 />
                             </div>
                             <div className={experienceStyles.experience_description}>

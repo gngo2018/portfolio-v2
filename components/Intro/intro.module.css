@@ -3,6 +3,10 @@
     visibility: hidden;
 }
 
+.image img{
+    object-fit: contain;
+}
+
 @media (min-width: 1024px) {
     .container{
         display: flex;

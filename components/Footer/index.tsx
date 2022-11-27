@@ -9,7 +9,8 @@ export default function Footer() {
                     <Image
                         src='/assets/square-github.svg'
                         alt='github'
-                        layout='fill'
+                        fill
+                        sizes="100vw"
                     />
                 </a>
             </div>
@@ -18,7 +19,8 @@ export default function Footer() {
                     <Image
                         src='/assets/linkedin.svg'
                         alt='linkedin'
-                        layout='fill'
+                        fill
+                        sizes="100vw"
                     />
                 </a>
             </div>
@@ -26,7 +28,8 @@ export default function Footer() {
                 <Image
                     src='/assets/id-card-solid.svg'
                     alt='resume'
-                    layout='fill'
+                    fill
+                    sizes="100vw"
                 />
             </div>
         </footer>

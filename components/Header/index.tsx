@@ -6,7 +6,7 @@ import headerStyles from './header.module.css'
 
 export default function Header() {
     const contentContext = useContentContext();
-    
+
     const handleLogoOnClick = () => {
         contentContext.setHomeIsOpen(true);
         contentContext.setExperienceIsOpen(false);
@@ -20,9 +20,9 @@ export default function Header() {
                 <div className={headerStyles.logo} onClick={handleLogoOnClick}>
                     <Image
                         src='/assets/g3-logo.png'
-                        layout='fill'
-                        objectFit='contain'
                         alt='logo'
+                        fill
+                        sizes="100vw"
                     />
                 </div>
                 <span>George Go</span>
