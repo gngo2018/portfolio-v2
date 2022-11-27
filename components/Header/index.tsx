@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { useContentContext } from '../../contexts/ContentContext'
 import Footer from '../Footer'
 import HeaderNav from '../HeaderNav'
@@ -21,7 +21,9 @@ export default function Header() {
                     <Image
                         src='/assets/g3-logo.png'
                         alt='logo'
-                        fill
+                        layout='fill'
+                        objectFit='contain'
+                        priority
                     />
                 </div>
                 <span>George Go</span>

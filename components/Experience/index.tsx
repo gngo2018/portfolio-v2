@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { GetAllExperiences } from '../../services/ExperienceService'
 import experienceStyles from './experience.module.css'
 
@@ -16,7 +16,8 @@ export default function Experience() {
                                 <Image
                                     src={e.imageUrl}
                                     alt='image'
-                                    fill
+                                    layout='fill'
+                                    objectFit='contain'
                                 />
                             </div>
                             <div className={experienceStyles.experience_description}>
